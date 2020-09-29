@@ -1,16 +1,12 @@
 @media only screen and (min-width: 32.5em) {
 h1 {
     font-size: 2.5rem;
-    color: blue;
+    /* color: blue; */
 }
 
 h2 {
     font-size: 1.5rem;
-    color: blue;
-}
-
-p img {
-    float: right;
+    /* color: blue; */
 }
 
 header, footer {
