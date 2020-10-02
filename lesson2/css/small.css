@@ -27,6 +27,13 @@ main {
     font-size: 0.8rem;
 }
 
+main section picture img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+    }
+
 main section {
     padding: 0 1rem;
 }
