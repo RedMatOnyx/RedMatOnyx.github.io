@@ -20,13 +20,14 @@ h1, h2 {
 
 h2 {
     font-size: 1rem;
-    border-bottom: 1px solid #999;
+    /* border-bottom: 1px solid #999; */
     margin-bottom: 0.5rem;
 }
 
-/* p {
+p {
+    font-size: 1rem;
     font-family: 'Bellefair', serif;
-} */
+}
 
 
 header, nav, main, footer {
@@ -35,6 +36,35 @@ header, nav, main, footer {
     padding: 0.59rem;
     max-width: 45rem;
 }
+
+/* below added from codepen */
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+.active {
+	color: yellow;
+}
+/* above added from codepen activity */
 
 header {
     margin-top: 10px;
