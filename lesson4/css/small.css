@@ -145,7 +145,7 @@ nav {
 	text-align: left;
 	text-decoration: none;
 	color: black;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 .navigation a:hover {
 	color: white;
