@@ -123,7 +123,7 @@ display block because the responsive class is added to the end of the class list
   }
   div.social img {
     width: 40px;
-    height: 40px;
+    height: auto;
     /* border: 1px solid #ccc; */
   }
   i {
