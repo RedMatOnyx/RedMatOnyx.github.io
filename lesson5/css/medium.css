@@ -27,6 +27,15 @@
         section {
             overflow: auto;
         }
+        .map {
+            /* float: left; */
+        }
+        .social {
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            /* float: clear; */
+        }
         header, footer, nav {
             border-radius: 10px;
         }

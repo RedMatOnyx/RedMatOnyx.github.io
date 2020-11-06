@@ -78,7 +78,10 @@ main {
     border: 1px dashed black;
     padding: 10px;
     background-color: azure;
-    width: 100%;
+    max-width: 100%;
+}
+.contentbox img {
+    max-width: 800px;
 }
     nav {
         background-color: #ffb870;
@@ -117,6 +120,12 @@ display block because the responsive class is added to the end of the class list
 */
 .responsive li {
 	display: block;
+}
+.articleimg {
+    max-width: 800px;
+}
+.map {
+    max-width: 400px;
 }
 .social {
     grid-column: -1;
