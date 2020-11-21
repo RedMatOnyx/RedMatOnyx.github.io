@@ -141,6 +141,15 @@ display block because the responsive class is added to the end of the class list
       /* padding: 25px; */
       margin-right: 10px;
   }
+  .message {
+    display: visible;
+    line-height: 15px;
+    color: green;
+    background-color: transparent;
+    position: fixed;
+    margin: 5px;
+    border: 2px solid #ccc;
+  }
 /*----- Clearfix: Force an Element not to collapse -----*/
 /* .clearfix:after {
     content: "";
