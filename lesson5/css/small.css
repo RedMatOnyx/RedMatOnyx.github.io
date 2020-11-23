@@ -142,7 +142,7 @@ display block because the responsive class is added to the end of the class list
       margin-right: 10px;
   }
   .message {
-    display: visible;
+    visibility: hidden;
     line-height: 15px;
     color: green;
     background-color: transparent;
