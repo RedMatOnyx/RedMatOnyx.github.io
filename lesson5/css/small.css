@@ -149,6 +149,7 @@ display block because the responsive class is added to the end of the class list
     position: fixed;
     margin: 5px;
     border: 2px solid #ccc;
+    padding: 5px;
   }
 /*----- Clearfix: Force an Element not to collapse -----*/
 /* .clearfix:after {
