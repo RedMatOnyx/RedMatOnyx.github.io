@@ -76,6 +76,7 @@ main {
 }
 .contentbox { /* stuff in middle of page */
     border: 1px dashed black;
+    margin: auto;
     padding: 10px;
     background-color: azure;
     max-width: 100%;
@@ -86,8 +87,10 @@ main {
     nav {
         background-color: #ffb870;
     }
-/* nav ul li.active a {background-color: rgba(0,0,0,0.2); color: green;}  */
-/* nav ul li a:hover {background-color: rgba(0,0,0,0.4);}  */
+/* .summary {
+
+    max-width: 100%;
+} */
 .navigation {
     margin: 0 auto;
 	list-style: none;
@@ -114,6 +117,8 @@ nav a:hover {
 	color: #ffb870;
 	background-color: #198eb3;
 }
+.active a {background-color: #198eb3; color: #ffb870;} 
+/* nav ul li a:hover {background-color: rgba(0,0,0,0.4);}  */
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to 
 display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
