@@ -41,7 +41,7 @@ section img {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 header img {
     width: 80px;
@@ -79,10 +79,10 @@ main {
     margin: auto;
     padding: 10px;
     background-color: azure;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
-.contentbox img {
-    max-width: 800px;
+.contentbox img { /* keeps the images from overflowing out of the viewport and main areas to the right */
+    max-width: 100%;
 }
     nav {
         background-color: #ffb870;
@@ -106,7 +106,9 @@ main {
 	display: none;
 }
 .navigation a {
-    display: block;
+    
+    display: flex;
+    justify-content: flex-end;    
     padding: 0.75rem;
     font-size: .95rem;
 	text-align: left;

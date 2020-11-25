@@ -51,8 +51,10 @@
             flex: 1 1 auto;
         }
         .navigation a {
+            display: block;
             text-align: center;
         }
+
         .navigation li:first-child {
             display: none;
         }
