@@ -75,7 +75,7 @@ main {
     font-size: .9rem;
 }
 .contentbox { /* stuff in middle of page */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     margin: auto;
     padding: 10px;
     background-color: azure;
