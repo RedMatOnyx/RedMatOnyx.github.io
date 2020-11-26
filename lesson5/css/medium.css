@@ -4,7 +4,11 @@
 
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3232+0,aa0000+100 */
 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    nav {
+.message {
+    font-size: 1.75em;
+    line-height: 1em;
+  }
+nav {
         background: linear-gradient(to bottom,  #6E604F 0%,#FFAA56 30%, #FFAA56 70%, #826A50 100%); 
         }
         h1 {
@@ -19,6 +23,22 @@
         h3 {
             font-size: 1.5rem;
         }
+        .fiveDayPics {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+            
+
+
+        }
+        .fiveDay {
+            display: block;
+        }
+        .fiveDay img {
+            max-width: 135px;
+            border-radius: 15px;
+            border: solid orange 4px;
+        }
         section img {
             display: visible;
             width: 800px;
@@ -27,15 +47,33 @@
         section {
             overflow: auto;
         }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: start; */
+            margin-right: 33px;
+            padding: 15px;
+        }
+        .contactMap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 25px;
+        }
         .map {
-            /* float: left; */
+            display: block;
+            /* flex-direction: row;
+            align-content: center; */
         }
         .social {
             display: flex;
             flex-direction: row;
-            align-content: space-between;
+            justify-content: center;
             /* float: clear; */
         }
+        div.social img {
+            margin: 0 5px 0 5px;
+          }
         header, footer, nav {
             border-radius: 10px;
         }
@@ -57,6 +95,23 @@
 
         .navigation li:first-child {
             display: none;
+        }
+        
+        article img {
+            /* width: 155px; */
+            /* border: solid; */
+            float: right;
+            width: 65%;      
+            padding: 10px;   
+        }
+        article {
+            display: block;
+            overflow: auto;
+        }
+        .clearfix {
+            clear: right;
+            overflow: auto;
+            zoom: 1;
         }
 }
     /* main {
