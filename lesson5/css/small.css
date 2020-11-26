@@ -56,6 +56,8 @@ footer {
     left: 20px;
     border: solid orange;
     background-color: rgb(255, 165, 0, 0.7);
+    color: white;
+    padding: 5px;
     
 }
 section img {
@@ -163,10 +165,17 @@ article {
     flex-direction: column;
 }
 .articleOverImg {
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column-reverse; */
 }
-
+.contactMap {
+    background-color: whitesmoke;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+}
 .social {
     grid-column: -1;
     margin-bottom: 10px;

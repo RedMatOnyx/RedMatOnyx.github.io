@@ -27,9 +27,6 @@ nav {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr;
-            
-
-
         }
         .fiveDay {
             display: block;
@@ -38,6 +35,8 @@ nav {
             max-width: 135px;
             border-radius: 15px;
             border: solid orange 4px;
+            margin-top: -20px;
+            margin-bottom: 10px;
         }
         section img {
             display: visible;
@@ -111,7 +110,7 @@ nav {
         .clearfix {
             clear: right;
             overflow: auto;
-            zoom: 1;
+            
         }
 }
     /* main {
