@@ -1,5 +1,5 @@
 let day = new Date().getDay();
-if (day == 6) {
+if (day == 5) {
     // document.querySelector(".message").style.backgroundColor = "pink";
     // document.querySelector(".message").style.visibility = "visible";
 
