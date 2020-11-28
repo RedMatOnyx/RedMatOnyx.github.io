@@ -1,6 +1,5 @@
-
-/* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 42rem) { /* 64rem large option */
+/* 64em is also 1028px when basefont is 16px */
 
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3232+0,aa0000+100 */
 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -8,6 +7,7 @@
     font-size: 1.75em;
     line-height: 1em;
   }
+
 nav {
         background: linear-gradient(to bottom,  #6E604F 0%,#FFAA56 30%, #FFAA56 70%, #826A50 100%); 
         }
@@ -23,20 +23,32 @@ nav {
         h3 {
             font-size: 1.5rem;
         }
-        .fiveDayPics {
+        /* .fiveDayPics {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr;
+        } */
+        .fiveDayPics {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
         .fiveDay {
-            display: block;
+            display: block;            
         }
-        .fiveDay img {
-            max-width: 135px;
+        .fiveDayPics div {
+            text-align: center;
+            font-size: 1.5em;
+            background-color: skyblue;
+            width: 135px;
             border-radius: 15px;
             border: solid orange 4px;
             margin-top: -20px;
             margin-bottom: 10px;
+        }
+        .summary {
+            font-size: 1.5em;
+            line-height: normal;
         }
         section img {
             display: visible;
@@ -49,7 +61,6 @@ nav {
         .contact {
             display: flex;
             flex-direction: column;
-            /* justify-content: start; */
             margin-right: 33px;
             padding: 15px;
         }
@@ -95,12 +106,11 @@ nav {
         .navigation li:first-child {
             display: none;
         }
-        
+    
         article img {
-            /* width: 155px; */
-            /* border: solid; */
             float: right;
-            width: 65%;      
+            /* width: 65%;   */
+            width: 500px;    
             padding: 10px;   
         }
         article {
@@ -113,20 +123,4 @@ nav {
             
         }
 }
-    /* main {
-        grid-template-columns: 1fr 1fr;
-    } */
-    /* main section:nth-child(2) {
-        display: block;
-    }
-
-    main section:nth-child(3) {
-        grid-column: span 2;
-    } */
-
-    /* nav ul { display: flex; }
-    nav ul li { flex: 1 1 100%; } */
-
-
-
 

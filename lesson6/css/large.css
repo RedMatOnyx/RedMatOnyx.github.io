@@ -1,6 +1,9 @@
-@media only screen and (min-width: 64rem) {
-.hero {
-    border: 20px;
-    border-style: groove;    
+@media only screen and (min-width: 80rem) {
+
+main {
+    max-width: 100%;
+}
+.summary {
+    font-size: 1.8em;
 }
 }

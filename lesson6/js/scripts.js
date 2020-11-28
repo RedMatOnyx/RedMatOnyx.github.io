@@ -50,7 +50,7 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
 // :::::::::::PANCAKE NOTICE ON FRIDAYS::::::::::::::::::::
 let day = new Date().getDay();
-if (day == 4) {
+if (day == 5) {
     // document.querySelector(".message").style.backgroundColor = "pink";
     // document.querySelector(".message").style.visibility = "visible";
 
@@ -59,4 +59,13 @@ document.querySelector(".message").style.display = "block";
 // To change the display property in JavaScript, consider the use of .style.display = "block" in a selection structure 
 // where the condition looks at the day of the week through the Date() object and getDay() method.
 
+// ::::::::::::::WEB FONT LOADER::::::::::::::::::::
+WebFont.load({google: {families: ['Montserrat + Alternates', 'Noto + Serif']}});
+          //  'Montserrat+Alternates:wght@800&family=Noto+Serif&display=swap'
+
+// :::::::::::::::WIND CHILL CALCULATION ::::::::::::::::
+let t = document.getElementById("temp").innerHTML;
+let s = document.getElementById("speed").innerHTML;
+let windchill = Math.round(35.74 + 0.6215 * t - 35.75 * s**0.16 + 0.4275 * t * s**0.16);
+document.getElementById("chill").innerHTML = `${windchill}`;
 

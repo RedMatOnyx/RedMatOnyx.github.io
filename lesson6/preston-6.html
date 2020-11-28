@@ -8,9 +8,6 @@
     <link rel="shortcut icon" href="../penpalfavicon.ico">
     <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&family=Noto+Serif&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Montserrat:wght@700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -43,26 +40,41 @@
     
 <main>
     
-    <h2>Preston Idaho</h2>
+    <h2 id="wayfindertitle">Preston Idaho</h2>
     <div class="contentbox outside">
-    <img class="hero" src="images/heroprairie.jpg" alt="placeholder image"> 
+    <!-- <figure><img src="images/franklinSmall670.jpg" sizes = "100vw" alt="hero image"
+        srcset="images/franklinSmall670.jpg 670w,
+        images/franklinMedium1280.jpg 900w,
+        images/franklinLarge2034.jpg 2000w"></figure> -->
+
+    <picture class="hero">
+        <source media="(max-width: 670px)" srcset="images/franklinSmall670.jpg">
+        <source media="(max-width: 1280px)" srcset="images/franklinMedium1280.jpg">
+        <source media="(max-width: 2090px)" srcset="images/franklinLarge2034.jpg">
+            <img src="images/franklinSmall670.jpg" alt="hero image">
+    </picture>
+    
+    <!-- <img class="hero" src="images/franklinLarge2034.jpg" alt="hero banner picture">  -->
+
     <div class="summary"><h2>Weather Summary</h2>
     <p>Currently: Sunny</p>
-    <p>Hi: 13 &#8457;</p>
-    <p>Wind Chill: 3 &#8457;</p>
+    <p>Temperature: <span id="temp">13</span> &#8457;</p>
+    <p>Wind Chill: <span id="chill">3</span> &#8457;</p>
     <p>Humidity: 57%</p>
-    <p>Wind Speed: 5 mph</p>
+    <p>Wind Speed: <span id="speed">55</span> mph</p>
     </div></div>
+    
     <div>
         <div class="fiveDay">
         <h3>5-Day Forecast</h3>
         <div class="fiveDayPics">
             
-        <img src="https://fakeimg.pl/150x150" alt="weather forcast image">
-        <img src="https://fakeimg.pl/150x150" alt="weather forcast image">
-        <img src="https://fakeimg.pl/150x150" alt="weather forcast image">
-        <img src="https://fakeimg.pl/150x150" alt="weather forcast image">
-        <img src="https://fakeimg.pl/150x150" alt="weather forcast image"></div></div>
+        <div><h3>Sunday</h3><img src="images/cloudrain.png" alt="weather forcast image"><p>43 &#8457;</p></div>
+        <div><h3>Monday</h3><img src="images/snowcloudsun.png" alt="weather forcast image"><p>43 &#8457;</p></div>
+        <div><h3>Tuesday</h3><img src="images/cloudsun.png" alt="weather forcast image"><p>43 &#8457;</p></div>
+        <div><h3>Wednesday</h3><img src="images/cloudsunrain.png" alt="weather forcast image"><p>43 &#8457;</p></div>
+        <div><h3>Thursday</h3><img src="images/sunshine.png" alt="weather forcast image"><p>43 &#8457;</p></div>
+    </div></div>
     <article>
         <img class="articleimg" src="images/img4article.jpg" alt="placeholder image">
         <div class="ArticleOverImg"><h3>Article Title</h3>
@@ -77,11 +89,7 @@
         </article>
     </div>
     <div class="clearfix"></div>
-        <!-- <img src="https://fakeimg.pl/800x300" alt="placeholder image"> -->
-    
 
-    <!-- <div class="contentbox">Article</div> -->
-    <!-- <div class="contentbox">Contact Information</div> -->
 </main>
 
     <footer> 
@@ -94,7 +102,7 @@
                 <p><i class="fas fa-phone"></i>999.999.9999</p>
                 <p><i class="far fa-envelope"></i>theweathersite@tws.com</p>
                 </div>
-            <img class="map" src="images/map.png" alt="map of preston soda springs and fish haven"></div>
+            <img class="map" src="images/map.jpg" alt="map of preston soda springs and fish haven"></div>
 
             <div class="social">
                 <a href="https://www.facebook.com" target="_blank">
@@ -112,17 +120,10 @@
         <div><span id="currentDate"></span></div>
          <!-- &copy; | Assignment Portal | All Rights Reserved | Today's Date: <span id="curentdate"></span> -->
     </footer>   
-    <script src="js/scripts.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-    google: {
-      families: [
-         'fontfamilynameofyourchoice'
-      ]
-    }
-  });
-    </script>
+    <script src="js/scripts.js"></script>
+
 
 </body>
 </html>
