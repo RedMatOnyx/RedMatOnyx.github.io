@@ -6,4 +6,7 @@ main {
 .summary {
     font-size: 1.8em;
 }
+.fiveDayPics div {
+    width: 200px;
+}
 }

@@ -60,7 +60,7 @@ document.querySelector(".message").style.display = "block";
 // where the condition looks at the day of the week through the Date() object and getDay() method.
 
 // ::::::::::::::WEB FONT LOADER::::::::::::::::::::
-WebFont.load({google: {families: ['Montserrat + Alternates', 'Noto + Serif']}});
+WebFont.load({google: {families: ['Montserrat', 'Noto']}});
           //  'Montserrat+Alternates:wght@800&family=Noto+Serif&display=swap'
 
 // :::::::::::::::WIND CHILL CALCULATION ::::::::::::::::
@@ -69,3 +69,5 @@ let s = document.getElementById("speed").innerHTML;
 let windchill = Math.round(35.74 + 0.6215 * t - 35.75 * s**0.16 + 0.4275 * t * s**0.16);
 document.getElementById("chill").innerHTML = `${windchill}`;
 
+// ::::::::::::CONTACT SYMBOLS:::::::::::::::::::::::::
+src='https://kit.fontawesome.com/a076d05399.js'

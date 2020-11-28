@@ -153,6 +153,11 @@ display block because the responsive class is added to the end of the class list
     display: none;
     max-width: 300px;
 }
+#articletitle {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: .5em;
+}
 article {
     border: solid orange 3px;    
     padding: 10px;
@@ -166,7 +171,10 @@ article {
     align-content: space-around;
     justify-content: center;
     margin-bottom: 15px;
-    
+}
+
+#envelope:before {
+    content: ' \2709';
 }
 .social {
     grid-column: -1;

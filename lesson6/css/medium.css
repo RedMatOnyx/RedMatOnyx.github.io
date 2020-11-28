@@ -28,6 +28,11 @@ nav {
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr;
         } */
+        #forecastmarginleft {
+            text-align: center;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
         .fiveDayPics {
             display: flex;
             flex-direction: row;
