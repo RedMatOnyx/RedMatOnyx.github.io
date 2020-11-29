@@ -1,4 +1,4 @@
-// ::::::::::CURRENT DATE::::::::::::::::
+// ::::::::::CURRENT DATE ::::::::::::::::
 //const options = {weekday: 'long', day: 'numeric', month: 'long', year:'numeric'};
 //document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
 
@@ -39,7 +39,7 @@ document.getElementById('currentDate').textContent = currentdate;
 
 document.getElementById("copyrightYear").innerHTML = todaysdate.getFullYear();
 
-// ::::::::::HAMBURGER MENU::::::::::::::::
+// ::::::::::HAMBURGER MENU ::::::::::::::::
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation');
 
@@ -48,7 +48,7 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 // To solve the mid resizing issue with responsive class on
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
-// :::::::::::PANCAKE NOTICE ON FRIDAYS::::::::::::::::::::
+// :::::::::::PANCAKE NOTICE ON FRIDAYS ::::::::::::::::::::
 let day = new Date().getDay();
 if (day == 5) {
     // document.querySelector(".message").style.backgroundColor = "pink";
@@ -59,7 +59,7 @@ document.querySelector(".message").style.display = "block";
 // To change the display property in JavaScript, consider the use of .style.display = "block" in a selection structure 
 // where the condition looks at the day of the week through the Date() object and getDay() method.
 
-// ::::::::::::::WEB FONT LOADER::::::::::::::::::::
+// ::::::::::::::WEB FONT LOADER ::::::::::::::::::::
 WebFont.load({google: {families: ['Montserrat', 'Noto']}});
           //  'Montserrat+Alternates:wght@800&family=Noto+Serif&display=swap'
 
@@ -69,5 +69,41 @@ let s = document.getElementById("speed").innerHTML;
 let windchill = Math.round(35.74 + 0.6215 * t - 35.75 * s**0.16 + 0.4275 * t * s**0.16);
 document.getElementById("chill").innerHTML = `${windchill}`;
 
-// ::::::::::::CONTACT SYMBOLS:::::::::::::::::::::::::
+// ::::::::::::CONTACT SYMBOLS :::::::::::::::::::::::::
 src='https://kit.fontawesome.com/a076d05399.js'
+
+// :::::::::::::PROGRESSIVE LAZY LOAD IMAGES :::::::::::::::::
+// ok
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imgOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 50px 0px"
+};
+
+// ok
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {image.removeAttribute('data-src');
+    };
+};
+
+if('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+        if(item.isInteresting) {
+            loadImages(item.target);
+            observer.unobserve(item.target);
+        
+        }
+    });
+}, imgOptions);
+
+imagesToLoad.forEach((img) => {
+    imgObserver.observe(img);
+});
+} else { // just load all images if not supported...
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
