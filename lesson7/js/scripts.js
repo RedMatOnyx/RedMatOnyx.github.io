@@ -74,36 +74,42 @@ src='https://kit.fontawesome.com/a076d05399.js'
 
 // :::::::::::::PROGRESSIVE LAZY LOAD IMAGES :::::::::::::::::
 // ok
-const imagesToLoad = document.querySelectorAll("img[data-src]");
+const images = document.querySelectorAll('[data-src]');
 
-const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
-};
-
-// ok
-const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {image.removeAttribute('data-src');
-    };
-};
-
-if('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-        if(item.isInteresting) {
-            loadImages(item.target);
-            observer.unobserve(item.target);
-        
+    // ok
+    function preloadImage(img) {
+        const src = img.getAttribute("data-src");
+        if(!src) {
+            return;
         }
-    });
+        img.src = src;
+        img.removeAttribute("data-src") // testing
+    }    
+        // const loadImages = (image) => {
+    //     image.setAttribute('src', image.getAttribute('data-src'));
+    //     image.onload = () => {image.removeAttribute('data-src');
+    //     };
+    // };
+const imgOptions = {
+threshold: 1,
+rootMargin: "0px 0px 50px 0px"
+};
+// if('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver((items, imgObserver) => {
+    items.forEach(item => {
+        if(!item.isIntersecting) {
+            return;
+        } else {
+            preloadImage(item.target);
+            imgObserver.unobserve(item.target);        
+        }
+    })
 }, imgOptions);
 
-imagesToLoad.forEach((img) => {
-    imgObserver.observe(img);
+images.forEach(image => {
+    imgObserver.observe(image);
 });
-} else { // just load all images if not supported...
-    imagesToLoad.forEach((img) => {
+
+imagesToLoad.forEach((img) => {
         loadImages(img);
-    });
-}
+});
