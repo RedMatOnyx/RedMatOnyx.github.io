@@ -62,6 +62,9 @@ nav {
         section {
             overflow: auto;
         }
+        .gallery {
+            grid-template-columns: 1fr 1fr;
+        }
         .contact {
             display: flex;
             flex-direction: column;

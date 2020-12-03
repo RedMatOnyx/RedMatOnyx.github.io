@@ -43,8 +43,6 @@ header, footer {
 footer {
     margin: 0 auto;
     padding: .59rem;
-    /* text-align: left; */
-    /* max-width: auto; */
 }
 .outside { /* keeps weather summary overlaying the hero banner */
     position: relative;
@@ -103,8 +101,26 @@ main {
     grid-template-columns: 1fr;
     font-size: .9rem;
 }
-#wayfindertitle {
+.wayfindertitle {
     margin-left: 20px;
+    text-align: left;
+}
+.gallery {
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+}
+.liftpic:hover {
+    box-shadow: 0 0 50px #333;
+}
+.gallery picture {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* centers the figcaption */
+    margin: 20px 20px;
+    border: solid blue 1px;
+    max-width: 600px;
+    /* background-color: gray; */
 }
 nav {
     background-color: #ffb870;

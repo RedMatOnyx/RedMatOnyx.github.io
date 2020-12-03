@@ -1,6 +1,6 @@
 .lazy {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     justify-content: center;
     justify-items: center;
 }

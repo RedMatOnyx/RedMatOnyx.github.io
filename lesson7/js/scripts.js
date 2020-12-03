@@ -64,7 +64,7 @@ WebFont.load({google: {families: ['Montserrat', 'Noto']}});
           //  'Montserrat+Alternates:wght@800&family=Noto+Serif&display=swap'
 
 // :::::::::::::::WIND CHILL CALCULATION ::::::::::::::::
-let t = document.getElementById("temp").innerHTML;
+let t = document.getElementById("currTemp").innerHTML;
 let s = document.getElementById("speed").innerHTML;
 let windchill = Math.round(35.74 + 0.6215 * t - 35.75 * s**0.16 + 0.4275 * t * s**0.16);
 document.getElementById("chill").innerHTML = `${windchill}`;
@@ -73,8 +73,32 @@ document.getElementById("chill").innerHTML = `${windchill}`;
 src='https://kit.fontawesome.com/a076d05399.js'
 
 // :::::::::::::PROGRESSIVE LAZY LOAD GALLERY IMAGES :::::::::::::::::
-/*
-img effects for gallery page
-.norm:hover {box-shadow: 0 0 50px #333;}
+const imagesToLoad = document.querySelectorAll("img[data-src]");
 
-*/
+const imgOptions = {
+    threshold: .5,
+    rootMargin: "0px 0px -50px 0px"
+};
+
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {image.removeAttribute('data-src');};
+};
+if('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver ((items, imgObserver) => {
+        items.forEach((item) => {
+            if(item.isIntersecting) {
+                loadImages(item.target);
+                imgObserver.unobserve(item.target);
+            }
+        });
+    }, imgOptions);
+
+        imagesToLoad.forEach((img) => {
+            imgObserver.observe(img);
+        });
+} else{
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+});
+}

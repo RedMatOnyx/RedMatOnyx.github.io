@@ -9,4 +9,7 @@ main {
 .fiveDayPics div {
     width: 200px;
 }
+.gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }
