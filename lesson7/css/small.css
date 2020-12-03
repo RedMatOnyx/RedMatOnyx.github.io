@@ -11,12 +11,7 @@ body {
     font-family: 'Noto Serif', serif;
     padding: 0;  
 }
-.lazy {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-}
+
 /******** all other fonts besides body *******/
 h1, h2, .navigation {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -197,6 +192,7 @@ article {
       /* padding: 25px; */
       margin-right: 10px;
   }
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
