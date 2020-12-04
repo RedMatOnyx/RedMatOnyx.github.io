@@ -1,0 +1,35 @@
+#novGoal {
+    background-color: #628ca6;
+}
+th {
+    background-color: #628ca6;
+    color: white;
+}
+table {
+    background-color: #e7ffed;
+    font-family: ubuntu, sans-serif; /* not yet working...  see virtual lab */
+}
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+thead, tfoot {
+    background-color: #7fb9c2;
+}
+thead {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+tfoot {
+    font-size: .7em;
+    text-align: center;
+}
+td, th {
+    padding: 5px;
+}
+/*
+italicize black friday
+check virtual lab for hints
+
+*/
