@@ -1,4 +1,8 @@
-#novGoal {
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}#novGoal {
     background-color: #628ca6;
 }
 th {
@@ -7,12 +11,19 @@ th {
 }
 table {
     background-color: #e7ffed;
-    font-family: ubuntu, sans-serif; /* not yet working...  see virtual lab */
+    font-family: ubuntu, sans-serif;
+    border: solid lightgray 1px;
+    border-collapse: collapse;
+    box-shadow: lightslategray 5px 5px 5px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 tr:nth-child(even) {
     background-color: #e7f0ed;
 }
-
+span {
+    font-style: italic;
+}
 thead, tfoot {
     background-color: #7fb9c2;
 }
@@ -27,6 +38,8 @@ tfoot {
 }
 td, th {
     padding: 5px;
+    border: solid lightgray 1px;
+    
 }
 /*
 italicize black friday
