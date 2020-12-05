@@ -39,57 +39,66 @@
     </nav>
     
 <main>
-    
-    <h2 class="wayfindertitle">Preston Idaho</h2>
-    <div class="contentbox outside">
-    <!-- <figure><img src="images/franklinSmall670.jpg" sizes = "100vw" alt="hero image"
-        srcset="images/franklinSmall670.jpg 670w,
-        images/franklinMedium1280.jpg 900w,
-        images/franklinLarge2034.jpg 2000w"></figure> -->
+    <h1>Storm Center</h1>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Person Reporting</legend>
+                <label class="top"> Full Name* <input type="text" name="fname" required pattern="[A-Za-z\s]{5,}"></label>
+                <label class="top"> Email <input type="email" name="email" placeholder="username@domain.com"></label>
+                <label class="top"> Phone* <input type="tel" name="phone" required pattern="[0-9-]{10,}"></label>
+                <label class="top"> Zip* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date: <input type="date" name="stormDate"></label>
 
-    <picture class="hero">
-        <source media="(max-width: 670px)" srcset="images/franklinSmall670.jpg">
-        <source media="(max-width: 1280px)" srcset="images/franklinMedium1280.jpg">
-        <source media="(max-width: 2090px)" srcset="images/franklinLarge2034.jpg">
-            <img src="images/franklinSmall670.jpg" alt="hero image">
-    </picture>
-    
-    <!-- <img class="hero" src="images/franklinLarge2034.jpg" alt="hero banner picture">  -->
+                <label class="top">Storm Type: <input list="stormType" name="stormType" />
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Showers">
+                        <option value="Tornado">
+                    </datalist>                
+                </label>
 
-    <div class="summary"><h2>Weather Summary</h2>
-    <p>Currently: Sunny</p>
-    <p>Temperature: <span id="currTemp">13</span> &#8457;</p>
-    <p>Wind Chill: <span id="chill">3</span> &#8457;</p>
-    <p>Humidity: 57%</p>
-    <p>Wind Speed: <span id="speed">55</span> mph</p>
-    </div></div>
+                <label class="flexly"> Storm Severity: <input type="range" name="severity" min="1" max="10" value="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
     
-    <div>
-        <div class="fiveDay">
-        <h3 id="forecastmarginleft">5-Day Forecast</h3>
-        <div class="fiveDayPics">
-            
-        <div><h3>Sunday</h3><img src="images/cloudrain.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Monday</h3><img src="images/snowcloudsun.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Tuesday</h3><img src="images/cloudsun.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Wednesday</h3><img src="images/cloudsunrain.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Thursday</h3><img src="images/sunshine.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-    </div></div>
-    <article>
-        <img class="articleimg" src="images/img4article.jpg" alt="placeholder image">
-        <div class="ArticleOverImg"><h3 id="articletitle">Article Title</h3>
-        <p>ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptas pariatur inventore. 
-        Doloribus dicta ipsa deserunt non sapiente dignissimos, recusandae porro ratione nesciunt, tempore cum, 
-         molestias iste? Perspiciatis eius doloribus laborum? Quasi! and more Lorem ipsum dolor sit, amet 
-        consectetur adipisicing elit. Doloribus harum eius eos, omnis incidunt ea error et unde, ab expedita quis in blanditiis 
-        a sit praesentium perferendis labore iusto dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing 
-        t. Tempora, inventore. Possimus, doloremque facilis reiciendis doloribus, consequatur magnam quaerat, 
-        mollitia dolores recusandae saepe cum numquam deserunt libero natus atque quis. Nostrum alias ullam illum asperiores 
-        pariatur ducimus optio nihil dolorem vel, deleniti atque est sit.</p></div>
-        </article>
-    </div>
-    <div class="clearfix"></div>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
 
+                <label class="top"> Storm Region: 
+                    <select name="stormRegion">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="mudLake">Mud Lake</option>
+                        <option value="southPole">South Pole</option>
+                    </select>
+                </label>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+
+                <label class="top">Additional Information: <input type="textarea" name="comments"></label>
+                
+            </fieldset>
+            <input type="button" value="Send Storm Report" class="submitBtn"></label>
+        </form>
 </main>
 
     <footer> 
