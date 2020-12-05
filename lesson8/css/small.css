@@ -263,6 +263,18 @@ form label.top input:required {
 form label.top input:required:valid {
     border: green solid 2px;
 }
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgray;
+}
+.thanks h1 {
+    font-size: 3rem;
+}
+.thanks p {
+    font-size: 1.5rem;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 /* .clearfix:after {
     content: "";

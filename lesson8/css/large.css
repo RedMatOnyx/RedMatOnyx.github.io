@@ -18,4 +18,10 @@ main {
 form label.sbs {
     padding: .4rem 0;
 }
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgray;
+}
 }
