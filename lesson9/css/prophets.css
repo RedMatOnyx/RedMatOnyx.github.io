@@ -1,0 +1,35 @@
+header, footer {
+    text-align: center;
+    background-color: mediumaquamarine;
+    padding: 1px;
+}
+body {
+    background-color: mediumaquamarine;
+}
+.cards {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center; /* centers the figcaption */
+    margin: 10px 10px;
+    border: solid black 1px;
+    background-color: olive;
+}
+img {
+    max-width: 300px;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 42rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 80rem) {
+    .cards {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+}
