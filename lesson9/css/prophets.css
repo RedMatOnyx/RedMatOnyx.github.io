@@ -1,26 +1,46 @@
+* {
+    margin: 0;
+    /* overflow: auto; */
+}
 header, footer {
     text-align: center;
-    background-color: mediumaquamarine;
-    padding: 1px;
+    background-color: rgb( 255 255 255);
+    padding: 10px;
 }
 body {
-    background-color: mediumaquamarine;
+    background-color: rgb(221 221 221);    
 }
 .cards {
     display: grid;
-    row-gap: 20px;
+    grid-gap: 15px;
     grid-template-columns: 1fr;
+    margin: 20px;
+    max-width: 100%;
+}
+section {
+    display: grid;
     justify-content: center;
-    justify-items: center; /* centers the figcaption */
-    margin: 10px 10px;
+    justify-items: center;
+    max-width: 100%;
     border: solid black 1px;
-    background-color: olive;
+    background-color: rgb(185 185 203);
+
 }
 img {
-    max-width: 300px;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0 0 10px 10px darkslategray;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.75em;
+    color: rgb(78 78 146);
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+p {
+    text-align: center;
+    margin: 0;
 }
 
 @media only screen and (min-width: 42rem) {
