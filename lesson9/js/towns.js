@@ -28,7 +28,9 @@ fetch(requestURL)
     p3.innerHTML = `Population: ${town.currentPopulation}`;
     p4.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
     // image.setAttribute('src', prophets[i].imageurl);
-    image.setAttribute('src', `${town.photo}`);
+    if (town.name == 'Preston') {image.setAttribute('src', 'images/preston1024.jpg')}
+    else if (town.name == 'Fish Haven') {image.setAttribute('src', 'images/fishhaven1024.jpg')}
+    else {image.setAttribute('src', 'images/sodasprings1024.jpg')};
     // image.setAttribute('alt', `Official Portrait of ${prophets[i].name} ${prophets[i].lastname}`);
     image.setAttribute('alt', `photo of ${town.name}`);
 // actually add the content to the container
