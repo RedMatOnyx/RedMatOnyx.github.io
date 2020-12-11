@@ -3,6 +3,9 @@
 main {
     max-width: 100%;
 }
+hero {
+    width: 1fr;
+}
 .summary {
     font-size: 1.8em;
 }
