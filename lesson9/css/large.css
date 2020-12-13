@@ -27,4 +27,33 @@ form label.sbs {
     justify-content: center;
     background-color: lightgray;
 }
+.townsdata {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+    column-gap: 20px;
+    
+}
+.townsdata section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+}
+.chillChart {
+    display: grid;
+}
+.chillChart h2 {
+    font-size: 3.5em;
+}
+.chillChart p {
+    font-size: 2em;
+}
+.chillChart div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.chillChart div {
+    display: grid;
+    justify-content: center;
+}
 }

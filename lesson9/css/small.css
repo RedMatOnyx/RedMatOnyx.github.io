@@ -275,6 +275,32 @@ form label.top input:required:valid {
 .thanks p {
     font-size: 1.5rem;
 }
+.townmotto {
+    font-weight: bold;
+}
+.townsdata {
+    padding: 20px;
+}
+.townsdata h2 {
+    font-size: 2em;
+}
+.townsdata section {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.chillChart {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    background-color: skyblue;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 /* .clearfix:after {
     content: "";

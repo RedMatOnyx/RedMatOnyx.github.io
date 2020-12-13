@@ -16,6 +16,7 @@ fetch(requestURL)
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
     let p4 = document.createElement('p');
+    let blabla = document.createElement('div');
     let image = document.createElement('img');
     // h2.textContent = prophets[i].name + ' ' + prophets[i].lastname; / use string interpolation instead, below
 
@@ -34,14 +35,16 @@ fetch(requestURL)
     // image.setAttribute('alt', `Official Portrait of ${prophets[i].name} ${prophets[i].lastname}`);
     image.setAttribute('alt', `photo of ${town.name}`);
 // actually add the content to the container
-    place.appendChild(h2);
-    place.appendChild(p1);
-    place.appendChild(p2);
-    place.appendChild(p3);
-    place.appendChild(p4);
+    blabla.appendChild(h2);
+    blabla.appendChild(p1);
+    blabla.appendChild(p2);
+    blabla.appendChild(p3);
+    blabla.appendChild(p4);
     place.appendChild(image);
+    place.appendChild(blabla);
 
     document.querySelector('div.townsdata').appendChild(place);
+    // document.querySelector('div.townsdata').appendChild(blabla);
 
     }); //added parenthesis and semi-colon per refactoring function above
 
