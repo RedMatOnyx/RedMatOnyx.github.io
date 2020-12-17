@@ -16,7 +16,7 @@
         <aside id="notice" class="message"><p>Saturday = Preston Pancakes in the Park!</p><p>9:00 a.m. Saturday at the city park pavilion.</p> 
         </aside>
     <header>
-        <a href="https://redmatonyx.github.io/lesson6/preston-6.html">
+        <a href="#">
             <picture><img src="images/logoicon.png" alt="site logo"></picture></a>
             <section class="headings">
                 <h1>Pen Pal Weather</h1>
@@ -41,17 +41,7 @@
     
     <h2 id="wayfindertitle">Preston Idaho</h2>
     <div class="contentbox outside">
-    <!-- <figure><img src="images/franklinSmall670.jpg" sizes = "100vw" alt="hero image"
-        srcset="images/franklinSmall670.jpg 670w,
-        images/franklinMedium1280.jpg 900w,
-        images/franklinLarge2034.jpg 2000w"></figure> -->
 
-    <!-- <picture class="hero">
-        <source media="(max-width: 670px)" srcset="images/franklinSmall670.jpg">
-        <source media="(max-width: 1280px)" srcset="images/franklinMedium1280.jpg">
-        <source media="(max-width: 2090px)" srcset="images/franklinLarge2034.jpg">
-            <img src="images/franklinSmall670.jpg" alt="hero image">
-    </picture> -->
     <picture class="hero">
         <source media="(max-width: 670px)" srcset="images/heroprairie670.jpg">
         <source media="(max-width: 1280px)" srcset="images/heroprairie1280.jpg">
@@ -62,35 +52,38 @@
     <!-- <img class="hero" src="images/franklinLarge2034.jpg" alt="hero banner picture">  -->
 
     <div class="summary"><h2>Weather Summary</h2>
-    <p>Currently: Sunny</p>
-    <p>Temperature: <span id="temp">13</span> &#8457;</p>
-    <p>Wind Chill: <span id="chill">3</span> &#8457;</p>
-    <p>Humidity: 57%</p>
-    <p>Wind Speed: <span id="speed">55</span> mph</p>
-    </div></div>
+    <p>Currently: <span id="currdesc">eye see</span></p>
+    <p>Temperature: <span id="currtemp">13</span><span> &#8457;</span></p>    
+    <p>Humidity: <span id="humidity">57</span><span>%</span></p>
+    <p>Wind Speed: <span id="speed">55</span><span> mph</span></p>
+    <p>Wind Chill: <span id="chill">3 &#8457;</span></p>
+</div></div>
     
     <div>
         <div class="fiveDay">
         <h3 id="forecastmarginleft">5-Day Forecast</h3>
         <div class="fiveDayPics">
             
-        <div><h3>Sunday</h3><img src="images/cloudrain.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Monday</h3><img src="images/snowcloudsun.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Tuesday</h3><img src="images/cloudsun.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Wednesday</h3><img src="images/cloudsunrain.png" alt="weather forcast image"><p>43 &#8457;</p></div>
-        <div><h3>Thursday</h3><img src="images/sunshine.png" alt="weather forcast image"><p>43 &#8457;</p></div>
+        <div><h3 id="dayofweek1">Sunday</h3>
+            <img id="icon1" src="images/cloudrain.png" alt="weather forcast image">
+            <p><span id=forecast1>43</span><span> &#8457;</span></p></div>
+        <div><h3 id="dayofweek2">Monday</h3>
+            <img id="icon2" src="images/snowcloudsun.png" alt="weather forcast image">
+            <p><span id=forecast2>43</span><span> &#8457;</span></p></div>
+        <div><h3 id="dayofweek3">Tuesday</h3>
+            <img id="icon3" src="images/cloudsun.png" alt="weather forcast image">
+            <p><span id=forecast3>43</span><span> &#8457;</span></p></div>
+        <div><h3 id="dayofweek4">Wednesday</h3>
+            <img id="icon4" src="images/cloudsunrain.png" alt="weather forcast image">
+            <p><span id=forecast4>43</span><span> &#8457;</span></p></div>
+        <div><h3 id="dayofweek5">Thursday</h3>
+            <img id="icon5" src="images/sunshine.png" alt="weather forcast image">
+            <p><span id=forecast5>43</span><span> &#8457;</span></p></div>
     </div></div>
     <article>
         <img class="articleimg" src="images/img4article.jpg" alt="placeholder image">
-        <div class="ArticleOverImg"><h3 id="articletitle">Article Title</h3>
-        <p>ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptas pariatur inventore. 
-        Doloribus dicta ipsa deserunt non sapiente dignissimos, recusandae porro ratione nesciunt, tempore cum, 
-         molestias iste? Perspiciatis eius doloribus laborum? Quasi! and more Lorem ipsum dolor sit, amet 
-        consectetur adipisicing elit. Doloribus harum eius eos, omnis incidunt ea error et unde, ab expedita quis in blanditiis 
-        a sit praesentium perferendis labore iusto dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing 
-        t. Tempora, inventore. Possimus, doloremque facilis reiciendis doloribus, consequatur magnam quaerat, 
-        mollitia dolores recusandae saepe cum numquam deserunt libero natus atque quis. Nostrum alias ullam illum asperiores 
-        pariatur ducimus optio nihil dolorem vel, deleniti atque est sit.</p></div>
+        <div class="ArticleOverImg"><h3 id="articletitle">Settling in Preston</h3>
+        <p>Preston is a fine place to settle, find employment, raise a family, and retire. There are things to do in all kinds of weather, outdoors or indoors. You can go river rafting, bowling, eat out, enjoy the rodeo, stay at a hotel, go to a park, participate in school events, local government, visit the library, or write to your pen pal about all the fun your having and make a move on your "chess-by-mail" game.</p></div>
         </article>
     </div>
     <div class="clearfix"></div>
@@ -123,7 +116,7 @@
 
         &copy; <span id="copyrightYear"></span> | Matthias Arter | Washington | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
         <div><span id="currentDate"></span></div>
-         <!-- &copy; | Assignment Portal | All Rights Reserved | Today's Date: <span id="curentdate"></span> -->
+        <p>Weather information courtesy of <a href="https://openweathermap.org/">Open Weather Map</a></p>
     </footer>   
     
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

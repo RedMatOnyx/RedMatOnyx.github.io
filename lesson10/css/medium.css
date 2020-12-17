@@ -38,6 +38,9 @@ nav {
             flex-direction: row;
             justify-content: space-evenly;
         }
+        .fiveDayPics img {
+            width: 100%;
+        }
         .fiveDay {
             display: block;            
         }
@@ -82,8 +85,6 @@ nav {
         }
         .map {
             display: block;
-            /* flex-direction: row;
-            align-content: center; */
         }
         .social {
             display: flex;
@@ -132,49 +133,17 @@ nav {
             overflow: auto;
             
         }
-        /* .townsdata img {
-            max-width: 60%;
-        }
-        .townsdata {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        } */
-/* h2 {text-align:center;} */
 
 .townsdata div {
     display: grid;
     grid-auto-columns: 1fr;
-    /* justify-content: center; */
     text-align: center;
-    /* align-content: center; */
 }
 .townsdata section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px 10px;
-    /* background-color: none; */
 }
-
-/* copied from small */
-/* .townsdata section {
-    background-color: skyblue;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    align-content: center;
-    margin: 20px;
-    padding: 10px;
-} */
-
-/* .townsdata section div {  */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; */
-    /* max-width: 100%; */
-    /* margin: .5rem auto; */
-	/* border:1px solid #bbb; */
-    /* background-color: #eee; */
-/* } */
 .townsdata section:nth-child(odd) img {
 	grid-column: 2;
 }
@@ -182,7 +151,6 @@ nav {
 	grid-column: 1;
 	grid-row: 1;
 }
-
 .townsdata img {width: 100%; height: auto;padding:0;}
 
 .chillChart {
@@ -201,11 +169,5 @@ nav {
     grid-column: 1;
     grid-row: 1;
 }
-
-
-
-/* .data {background-color:#000; color:#fff;} */
-
-/* p {padding: .75rem;} */
 }
 

@@ -4,10 +4,12 @@ fetch(apiURL)
   .then((jsObject) => {console.log(jsObject);
 
     const curtemp = document.querySelector('#current-temp');
+    const windy = document.querySelector('#breezepace');
     const iconsource = document.querySelector('#imagesrc');
     const weathericon = document.querySelector('#icon');
 
     curtemp.innerHTML = jsObject.main.temp;
+    windy.innerHTML = jsObject.wind.speed;
 
     iconsource.textContent = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
 
